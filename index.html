@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>CV</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="avatar">
+                <img src="img/avatar.jpeg" alt="avatar">
+            </div>
+            <h1>Aleksandr Perepelitsa</h1>
+            <p class="prof">web developer</p>
+        </header>
+        <main>
+            <div class="d-flex">
+                <div class="profile">
+                    <h2>Profile</h2>
+                    <p>I am a mature, positive and hardworking individual, who always strives to achieve the highest standard possible, at any given task. I am currently studying and looking for an opportunity to improve my technical skills</p>
+                </div>
+                <div class="contacts">
+                    <h2>Contacts</h2>
+                    <ul>
+                        <li><i class="far fa-envelope"></i> perepelitsa.alex@gmail.com</li>
+                        <li><i class="fab fa-telegram-plane"></i> @brodozer</li>
+                        <li><i class="fab fa-github"></i> <a href="https://github.com/brodozer">brodozer</a></li>
+                        <li><i class="fab fa-discord"></i> brodozer#6997</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div>
+                    <div class="experience">
+                        <h2>Expirience</h2>
+                        <div>
+                            <h4>DNA of Business</h4>
+                            <p class="experience-date">position (from 2020.07)</p>
+                            <p>Support websites</p>
+                        </div>
+                        <div>
+                            <h4>Open corporate university of Alex Yanovsky</h4>
+                            <p class="experience-date">position (from 2018.01)</p>
+                            <p>Technical support for students</p>
+                        </div>
+                    </div>
+                    <div class="example">
+                        <h2>Code example</h2>
+                        <p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+                            Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in. Additionally, if the number is negative, return 0 (for languages that do have them).
+                            Note: If the number is a multiple of both 3 and 5, only count it once.</p>
+                        <pre>
+                            <code>
+                                function solution(number){
+                                    let sum = 0
+                                    for (let i = 3; i < number; i++) {
+                                      if (i % 3 === 0 || i % 5 === 0) {
+                                        sum += i
+                                      }
+                                    }
+                                    return sum
+                                }
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div>
+                    <div class="education">
+                        <h2>Course</h2>
+                        <ul>
+                            <li>
+                                <a href="https://drive.google.com/open?id=0BzoeJN8sYRtCS1BvT1dKT1VtQTlnVW9fS0xXZmVyRXAzYmlv">Front-End</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>HTML5/CSS3/JavaScript/jQuery</li>
+                            <li>Bootstrap/Gulp/GIT</li>
+                            <li>LESS/SASS</li>
+                            <li>Adobe Photoshop/Figma/Zeplin/Avocode</li>
+                        </ul>
+                    </div>
+                    <div class="language">
+                        <h2>Language</h2>
+                        <ul>
+                            <li>English - level A1</li>
+                            <li>Russian - free speak</li>
+                            <li>Ukrainian - native language</li>
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+        </main>
+        <footer>
+            <div class="footer d-flex">
+                <a href="https://github.com/brodozer"><i class="fab fa-github"></i></a>
+                <span>&copy; 2021</span>
+                <a href="https://rs.school/js/"><img src="img/rs-logo.png" alt="rs-logo"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
