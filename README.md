@@ -1,1 +1,0 @@
-https://brodozer.github.io/rsschool-cv/cv
