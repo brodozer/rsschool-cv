@@ -1,0 +1,142 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.line {
+    display: inline-block;
+    width: 80px;
+    height: 3px;
+    background-color: #000;
+}
+
+.wrapper {
+    flex-direction: column;
+    max-width: 992px;
+    margin: 25px auto;
+    background-color: #f7f7f7;
+    border: 2px solid #000;
+    outline: 25px solid #f7f7f7;
+}
+
+header,
+main,
+footer {
+    padding: 30px;
+}
+
+header{
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.avatar {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+}
+
+h1, 
+h2, 
+h4, 
+.sub-title,
+.experience-date {
+    text-transform: uppercase;
+}
+
+h1 {
+    padding: 10px;
+    font-weight: 400;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+h4 {
+    padding: 10px 0;
+}
+
+.sub-title {
+    font-size: 25px;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+.profile, 
+.contacts,
+.left,
+.right {
+    width: 50%;
+}
+
+.profile,
+.contacts,
+.left > div,
+.right > div {
+    padding: 20px 30px;
+}
+
+.profile,
+.left {
+    text-align: right;
+}
+
+.contacts li {
+    font-size: 18px;
+}
+
+.contacts .fa {
+    font-size: 24px;
+    color: #606a75;
+}
+
+.left {
+    border-right: 2px solid #000;
+}
+
+.left .line {
+    margin-bottom: 10px;
+}
+
+.experience-date {
+    font-weight: 700;
+}
+
+code {
+    width: 100%;
+}
+
+footer{
+    flex: 0 0 auto;
+}
+

@@ -8,17 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>CV</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper d-flex">
         <header>
             <div class="avatar">
                 <img src="img/avatar.jpeg" alt="avatar">
             </div>
             <h1>Aleksandr Perepelitsa</h1>
-            <p class="prof">web developer</p>
+            <p class="sub-title">web developer</p>
+            <span class="line"></span>
         </header>
         <main>
             <div class="d-flex">
@@ -28,25 +30,27 @@
                 </div>
                 <div class="contacts">
                     <h2>Contacts</h2>
+                    <i class="fab fa-telegram-plane"></i>
                     <ul>
-                        <li><i class="far fa-envelope"></i> perepelitsa.alex@gmail.com</li>
-                        <li><i class="fab fa-telegram-plane"></i> @brodozer</li>
-                        <li><i class="fab fa-github"></i> <a href="https://github.com/brodozer">brodozer</a></li>
-                        <li><i class="fab fa-discord"></i> brodozer#6997</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> perepelitsa.alex@gmail.com</li>
+                        <li><i class="fa fa-telegram" aria-hidden="true"></i> @brodozer</li>
+                        <li><i class="fa fa-github-square" aria-hidden="true"></i> <a href="https://github.com/brodozer">https://github.com/brodozer</a></li>
                     </ul>
                 </div>
             </div>
             <div class="d-flex">
-                <div>
+                <div class="left">
                     <div class="experience">
                         <h2>Expirience</h2>
                         <div>
                             <h4>DNA of Business</h4>
+                            <span class="line"></span>
                             <p class="experience-date">position (from 2020.07)</p>
                             <p>Support websites</p>
                         </div>
                         <div>
                             <h4>Open corporate university of Alex Yanovsky</h4>
+                            <span class="line"></span>
                             <p class="experience-date">position (from 2018.01)</p>
                             <p>Technical support for students</p>
                         </div>
@@ -55,27 +59,27 @@
                         <h2>Code example</h2>
                         <p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
                             Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in. Additionally, if the number is negative, return 0 (for languages that do have them).
-                            Note: If the number is a multiple of both 3 and 5, only count it once.</p>
-                        <pre>
-                            <code>
+                            Note: If the number is a multiple of both 3 and 5, only count it once.</p> 
+                        <img src="img/code_example.png" alt="code-example">     
+                            <!-- <pre>
                                 function solution(number){
                                     let sum = 0
                                     for (let i = 3; i < number; i++) {
-                                      if (i % 3 === 0 || i % 5 === 0) {
+                                        if (i % 3 === 0 || i % 5 === 0) {
                                         sum += i
-                                      }
+                                        }
                                     }
                                     return sum
                                 }
-                            </code>
-                        </pre>
+                            </pre>    -->
                     </div>
                 </div>
-                <div>
+                <div class="right">
                     <div class="education">
                         <h2>Course</h2>
                         <ul>
                             <li>
+                                <i class="fa fa-check-square-o" aria-hidden="true"></i>
                                 <a href="https://drive.google.com/open?id=0BzoeJN8sYRtCS1BvT1dKT1VtQTlnVW9fS0xXZmVyRXAzYmlv">Front-End</a>
                             </li>
                         </ul>
@@ -83,18 +87,18 @@
                     <div class="skills">
                         <h2>Skills</h2>
                         <ul>
-                            <li>HTML5/CSS3/JavaScript/jQuery</li>
-                            <li>Bootstrap/Gulp/GIT</li>
-                            <li>LESS/SASS</li>
-                            <li>Adobe Photoshop/Figma/Zeplin/Avocode</li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>HTML5/CSS3/JavaScript/jQuery</li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Bootstrap/Gulp/GIT</li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>LESS/SASS</li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Adobe Photoshop/Figma/Zeplin/Avocode</li>
                         </ul>
                     </div>
                     <div class="language">
                         <h2>Language</h2>
                         <ul>
-                            <li>English - level A1</li>
-                            <li>Russian - free speak</li>
-                            <li>Ukrainian - native language</li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> English - level A1</li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Russian - free speak</li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Ukrainian - native language</li>
                         </ul>
                     </div>
                 </div>                
