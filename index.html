@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>CV</title>
 </head>
 <body>
@@ -59,6 +62,16 @@
                         <h2>Code example</h2>
                         <p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in. Additionally, if the number is negative, return 0 (for languages that do have them). Note: If the number is a multiple of both 3 and 5, only count it once.</p> 
                         <!-- <img src="img/code_example.png" alt="code-example"> -->
+<pre><code class="language-js">
+function solution(number) {
+    for (let i = 3; i < number; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+            sum += 1;
+        }
+    }
+    return sum;
+}
+</code></pre>
                     </div>
                 </div>
                 <div class="right">
@@ -67,7 +80,7 @@
                         <ul>
                             <li>
                                 <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                                <a href="https://drive.google.com/open?id=0BzoeJN8sYRtCS1BvT1dKT1VtQTlnVW9fS0xXZmVyRXAzYmlv">Front-End</a>
+                                <a href="https://drive.google.com/open?id=0BzoeJN8sYRtCS1BvT1dKT1VtQTlnVW9fS0xXZmVyRXAzYmlv" target="_blank">Front-End</a>
                             </li>
                         </ul>
                     </div>
@@ -95,7 +108,7 @@
                 <div class="card">
                     <figure>
                         <figcaption>Agency</figcaption>
-                        <a href="http://brodozer.zzz.com.ua/agency/">
+                        <a href="http://brodozer.zzz.com.ua/agency/" target="_blank">
                             <img src="img/agency.png" alt="agency">   
                         </a>                   
                     </figure>
@@ -104,7 +117,7 @@
                 <div class="card">
                     <figure>
                         <figcaption>Pingbuller</figcaption>
-                        <a href="http://brodozer.zzz.com.ua/pingbuller/">
+                        <a href="http://brodozer.zzz.com.ua/pingbuller/" target="_blank">
                             <img src="img/pingbuller.png" alt="pingbuller">   
                         </a>                   
                     </figure>
@@ -113,7 +126,7 @@
                 <div class="card">
                     <figure>
                         <figcaption>Genio</figcaption>
-                        <a href="http://brodozer.zzz.com.ua/genio/">
+                        <a href="http://brodozer.zzz.com.ua/genio/" target="_blank">
                             <img src="img/genio.png" alt="genio">   
                         </a>                   
                     </figure>
@@ -122,7 +135,7 @@
                 <div class="card">
                     <figure>
                         <figcaption>Barilla</figcaption>
-                        <a href="http://brodozer.zzz.com.ua/barilla/">
+                        <a href="http://brodozer.zzz.com.ua/barilla/" target="_blank">
                             <img src="img/barilla.png" alt="barilla">   
                         </a>                   
                     </figure>

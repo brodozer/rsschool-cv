@@ -132,6 +132,10 @@ main{
     font-weight: 700;
 }
 
+.example pre {
+    text-align: left;
+}
+
 .example img {
     display: block;
     width: 100%;
