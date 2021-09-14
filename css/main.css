@@ -139,6 +139,36 @@ main{
     border-radius: 10px;
 }
 
+.project-title {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.project-example {
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p {
+    padding: 10px;
+    font-size: 14px;
+}
+
+figcaption {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+}
+
 footer {
     flex: 0 0 auto;
 }
