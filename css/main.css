@@ -1,5 +1,6 @@
 body {
     font-family: 'Quicksand', sans-serif;
+    background-color: #f7f7f7;
 }
 
 ul {
@@ -30,12 +31,9 @@ a {
 }
 
 .wrapper {
-    flex-direction: column;
     max-width: 992px;
     margin: 25px auto;
-    background-color: #f7f7f7;
     border: 2px solid #000;
-    outline: 25px solid #f7f7f7;
 }
 
 header,
@@ -45,7 +43,6 @@ footer {
 }
 
 header{
-    flex: 0 0 auto;
     text-align: center;
 }
 
@@ -88,10 +85,6 @@ h4 {
     font-size: 25px;
 }
 
-main{
-    flex: 1 0 auto;
-}
-
 .profile, 
 .contacts,
 .left,
@@ -126,6 +119,11 @@ main{
 
 .left .line {
     margin-bottom: 10px;
+}
+
+.education img {
+    margin-top: 10px;
+    border: 2px solid #f0f0f0;
 }
 
 .experience-date {
@@ -165,16 +163,16 @@ main{
     font-size: 14px;
 }
 
+.card img {
+    border-radius: 5px;
+}
+
 figcaption {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 24px;
     text-align: center;
     padding: 10px;
-}
-
-footer {
-    flex: 0 0 auto;
 }
 
 .footer-icons {
@@ -188,4 +186,71 @@ footer {
 
 .footer-icons .fa {
     font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .wrapper {
+        margin: 0;
+        border: none;
+    }
+
+    .profile, 
+    .contacts,
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .profile,
+    .left {
+        text-align: left;
+    }
+
+    .left {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    header, main, footer {
+        padding: 30px 20px;
+    }
+
+    .profile, 
+    .contacts, 
+    .left > div, 
+    .right > div {
+        padding: 20px 0;
+    }
+
+    .avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .card img {
+        width: 280px;
+    }
+
+    .footer-icons {
+        justify-content: space-around;
+    }
 }
