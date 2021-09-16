@@ -18,6 +18,33 @@
 <body>
     <div class="wrapper">
         <header>
+            <nav class="navbar d-flex">
+                <button class="navbar-menu d-none" type="button">
+                    <i class="fa fa-bars navbar-menu-icon" aria-hidden="true"></i>
+                </button>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Experiense</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Course</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Project</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <div class="avatar">
                 <img src="img/avatar.jpeg" alt="avatar">
             </div>
@@ -150,6 +177,36 @@ function solution(number) {
                 <a href="https://rs.school/js/"><img src="img/rs_school.svg" alt="rs-logo" width="60" height="24"></a>
             </div>
         </footer>
+    </div>
+    <div class="modal">
+        <!-- копировать навигацию при ините страницы -->
+        <nav class="navbar">
+            <div class="navbar-collapse">
+                <ul class="navbar-nav d-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Experiense</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Project</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <button class="navbar-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
     </div>
 </body>
 </html>

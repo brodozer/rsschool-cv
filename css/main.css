@@ -18,9 +18,18 @@ a {
     color: #000;
 }
 
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
 
 .d-flex {
     display: flex;
+}
+
+.d-none {
+    display: none;
 }
 
 .line {
@@ -44,6 +53,30 @@ footer {
 
 header{
     text-align: center;
+}
+
+.navbar .navbar-menu {
+    display: none;
+}
+
+.navbar .navbar-menu-icon {
+    font-size: 25px;
+    color: #000;
+}
+
+.navbar-collapse {
+    padding-bottom: 20px;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .avatar {
@@ -188,6 +221,53 @@ figcaption {
     font-size: 24px;
 }
 
+.modal {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 200ms;
+    visibility: hidden;
+    opacity: 0;
+}
+  
+.modal .navbar-menu-close {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    right: 10px;
+}
+
+.modal .navbar-menu-close {
+    color: #fff;
+    font-size: 25px;
+}
+  
+.modal .navbar {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f7f7f7; 
+    height: 100%;
+    width: 50%;
+    transition: transform ease 0.3s;
+    transform: translate3d(-100%, 0, 0);
+}
+
+.modal.modal-toggle {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.modal.modal-toggle .navbar {
+    transform: translate3d(0, 0, 0);
+}
+  
+
 @media screen and (max-width: 768px) {
     .d-flex {
         flex-wrap: wrap;
@@ -196,6 +276,14 @@ figcaption {
     .wrapper {
         margin: 0;
         border: none;
+    }
+
+    header .navbar-collapse  {
+        display: none;
+    }
+
+    .navbar .navbar-menu {
+        display: block;
     }
 
     .profile, 
@@ -212,6 +300,10 @@ figcaption {
 
     .left {
         border: none;
+    }
+
+    .modal .navbar-nav {
+        flex-direction: column;
     }
 }
 
