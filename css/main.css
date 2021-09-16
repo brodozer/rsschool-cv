@@ -163,15 +163,16 @@ h4 {
     font-weight: 700;
 }
 
-.example pre {
-    text-align: left;
+.example .code {
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #e6e6e6;
+    overflow-x: auto;   
+    border-radius: 5px;
 }
 
-.example img {
-    display: block;
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 10px;
+.example pre {
+    text-align: left;
 }
 
 .project-title {
