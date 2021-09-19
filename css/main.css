@@ -9,8 +9,8 @@ ul {
 }
 
 ul li {
-    list-style-type: none;
     margin-bottom: 10px;
+    list-style-type: none;
 }
 
 a {
@@ -19,9 +19,9 @@ a {
 }
 
 button {
-    outline: none;
-    border: none;
     background-color: transparent;
+    border: none;
+    outline: none;  
 }
 
 .d-flex {
@@ -75,8 +75,8 @@ header{
 .nav-link {
     display: block;
     padding: 10px;
-    text-transform: uppercase;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .avatar {
@@ -101,8 +101,8 @@ h4,
 
 h1 {
     padding: 10px;
-    font-weight: 400;
     font-size: 45px;
+    font-weight: 400;
     letter-spacing: 2px;
 }
 
@@ -164,8 +164,8 @@ h4 {
 }
 
 .example .code {
-    padding: 15px;
     margin-top: 20px;
+    padding: 15px;
     background-color: #e6e6e6;
     overflow-x: auto;   
     border-radius: 5px;
@@ -186,10 +186,10 @@ h4 {
 
 .card {
     display: flex;
-    width: 50%;
-    padding: 20px;
     flex-direction: column;
     align-items: center;
+    width: 50%;
+    padding: 20px;
 }
 
 .card p {
@@ -201,12 +201,33 @@ h4 {
     border-radius: 5px;
 }
 
+.card a {
+    position: relative;
+    display: block;
+}
+
+.card a:before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    border-radius: 5px;
+    background-color: #000; 
+    opacity: 0;
+    transition: opacity ease 0.3s;
+}
+
+.card.hover a:before {
+    opacity: 0.4;
+}
+
 figcaption {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 24px;
-    text-align: center;
     padding: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;   
 }
 
 .footer-icons {
@@ -226,9 +247,9 @@ figcaption {
     position: fixed;
     z-index: 100;
     top: 0;
+    right: 0;
     bottom: 0;
     left: 0;
-    right: 0;
     background: rgba(0, 0, 0, 0.8);
     transition: opacity 200ms;
     visibility: hidden;
@@ -243,18 +264,18 @@ figcaption {
 }
 
 .modal .navbar-menu-close {
-    color: #fff;
     font-size: 25px;
+    color: #fff;
 }
   
 .modal .navbar {
-    display: block;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #f7f7f7; 
-    height: 100%;
+    display: block;
     width: 50%;
+    height: 100%;
+    background-color: #f7f7f7;   
     transition: transform ease 0.3s;
     transform: translate3d(-100%, 0, 0);
 }
