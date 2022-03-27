@@ -10,11 +10,41 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <!-- <script>hljs.initHighlightingOnLoad();</script> -->
     <title>CV</title>
 </head>
 <body>
-    <div class="wrapper d-flex">
+    <div class="wrapper">
         <header>
+            <nav class="navbar d-flex">
+                <button class="navbar-menu d-none" type="button">
+                    <i class="fa fa-bars navbar-menu-icon" aria-hidden="true"></i>
+                </button>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#profile">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Course</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <div class="avatar">
                 <img src="img/avatar.jpeg" alt="avatar">
             </div>
@@ -24,11 +54,11 @@
         </header>
         <main>
             <div class="d-flex">
-                <div class="profile">
+                <div class="profile" id="profile">
                     <h2>Profile</h2>
                     <p>I am a mature, positive and hardworking individual, who always strives to achieve the highest standard possible, at any given task. I am currently studying and looking for an opportunity to improve my technical skills</p>
                 </div>
-                <div class="contacts">
+                <div class="contacts" id="contacts">
                     <h2>Contacts</h2>
                     <i class="fab fa-telegram-plane"></i>
                     <ul>
@@ -40,7 +70,7 @@
             </div>
             <div class="d-flex">
                 <div class="left">
-                    <div class="experience">
+                    <div class="experience" id="experience">
                         <h2>Expirience</h2>
                         <div>
                             <h4>DNA of Business</h4>
@@ -55,23 +85,23 @@
                             <p>Technical support for students</p>
                         </div>
                     </div>
-                    <div class="example">
+                    <div class="example" id="example">
                         <h2>Code example</h2>
                         <p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in. Additionally, if the number is negative, return 0 (for languages that do have them). Note: If the number is a multiple of both 3 and 5, only count it once.</p> 
-                        <img src="img/code_example.png" alt="code-example">    
+                        <div class="code"></div>                    
                     </div>
                 </div>
                 <div class="right">
-                    <div class="education">
+                    <div class="education" id="education">
                         <h2>Course</h2>
                         <ul>
                             <li>
-                                <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                                <a href="https://drive.google.com/open?id=0BzoeJN8sYRtCS1BvT1dKT1VtQTlnVW9fS0xXZmVyRXAzYmlv">Front-End</a>
+                                <i class="fa fa-check-square-o" aria-hidden="true"></i> Front-End
                             </li>
                         </ul>
+                        <img src="img/prog_kiev_ua.png" alt="progKiev">
                     </div>
-                    <div class="skills">
+                    <div class="skills" id="skills">
                         <h2>Skills</h2>
                         <ul>
                             <li><i class="fa fa-check-square-o" aria-hidden="true"></i> HTML5/CSS3/JavaScript/jQuery</li>
@@ -80,7 +110,7 @@
                             <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Adobe Photoshop/Figma/Zeplin/Avocode</li>
                         </ul>
                     </div>
-                    <div class="language">
+                    <div class="language" id="language">
                         <h2>Language</h2>
                         <ul>
                             <li><i class="fa fa-check-square-o" aria-hidden="true"></i> English - level A1</li>
@@ -89,6 +119,45 @@
                         </ul>
                     </div>
                 </div>                
+            </div>
+            <h2 class="project-title">Portfolio</h2>
+            <div class="d-flex project-example" id="projects">
+                <div class="card">
+                    <figure>
+                        <figcaption>Agency</figcaption>
+                        <a href="http://brodozer.zzz.com.ua/agency/" target="_blank">
+                            <img src="img/agency.png" alt="agency">   
+                        </a>                   
+                    </figure>
+                    <p>HTML / SASS / JS / Font Awesome / Bootstrap / Gulp / Git</p>
+                </div>
+                <div class="card">
+                    <figure>
+                        <figcaption>Pingbuller</figcaption>
+                        <a href="http://brodozer.zzz.com.ua/pingbuller/" target="_blank">
+                            <img src="img/pingbuller.png" alt="pingbuller">   
+                        </a>                   
+                    </figure>
+                    <p>HTML / LESS / JS / Gulp / Git</p>
+                </div>
+                <div class="card">
+                    <figure>
+                        <figcaption>Genio</figcaption>
+                        <a href="http://brodozer.zzz.com.ua/genio/" target="_blank">
+                            <img src="img/genio.png" alt="genio">   
+                        </a>                   
+                    </figure>
+                    <p>HTML / CSS</p>
+                </div>
+                <div class="card">
+                    <figure>
+                        <figcaption>Barilla</figcaption>
+                        <a href="http://brodozer.zzz.com.ua/barilla/" target="_blank">
+                            <img src="img/barilla.png" alt="barilla">   
+                        </a>                   
+                    </figure>
+                    <p>HTML / SASS / JS</p>
+                </div>
             </div>
         </main>
         <footer>
@@ -99,5 +168,12 @@
             </div>
         </footer>
     </div>
+    <div class="modal">
+        <nav class="navbar"></nav>
+        <button class="navbar-menu-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

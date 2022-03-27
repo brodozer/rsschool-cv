@@ -1,5 +1,6 @@
 body {
     font-family: 'Quicksand', sans-serif;
+    background-color: #f7f7f7;
 }
 
 ul {
@@ -8,8 +9,8 @@ ul {
 }
 
 ul li {
-    list-style-type: none;
     margin-bottom: 10px;
+    list-style-type: none;
 }
 
 a {
@@ -17,9 +18,18 @@ a {
     color: #000;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;  
+}
 
 .d-flex {
     display: flex;
+}
+
+.d-none {
+    display: none;
 }
 
 .line {
@@ -30,12 +40,9 @@ a {
 }
 
 .wrapper {
-    flex-direction: column;
     max-width: 992px;
     margin: 25px auto;
-    background-color: #f7f7f7;
     border: 2px solid #000;
-    outline: 25px solid #f7f7f7;
 }
 
 header,
@@ -45,8 +52,31 @@ footer {
 }
 
 header{
-    flex: 0 0 auto;
     text-align: center;
+}
+
+.navbar .navbar-menu {
+    display: none;
+}
+
+.navbar .navbar-menu-icon {
+    font-size: 25px;
+    color: #000;
+}
+
+.navbar-collapse {
+    padding-bottom: 20px;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .avatar {
@@ -71,8 +101,8 @@ h4,
 
 h1 {
     padding: 10px;
-    font-weight: 400;
     font-size: 45px;
+    font-weight: 400;
     letter-spacing: 2px;
 }
 
@@ -86,10 +116,6 @@ h4 {
 
 .sub-title {
     font-size: 25px;
-}
-
-main{
-    flex: 1 0 auto;
 }
 
 .profile, 
@@ -128,19 +154,80 @@ main{
     margin-bottom: 10px;
 }
 
+.education img {
+    margin-top: 10px;
+    border: 2px solid #f0f0f0;
+}
+
 .experience-date {
     font-weight: 700;
 }
 
-.example img {
-    display: block;
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 10px;
+.example .code {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e6e6e6;
+    overflow-x: auto;   
+    border-radius: 5px;
 }
 
-footer {
-    flex: 0 0 auto;
+.example pre {
+    text-align: left;
+}
+
+.project-title {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.project-example {
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+}
+
+.card p {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.card img {
+    border-radius: 5px;
+}
+
+.card a {
+    position: relative;
+    display: block;
+}
+
+.card a:before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    border-radius: 5px;
+    background-color: #000; 
+    opacity: 0;
+    transition: opacity ease 0.3s;
+}
+
+.card.hover a:before {
+    opacity: 0.4;
+}
+
+figcaption {
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;   
 }
 
 .footer-icons {
@@ -154,4 +241,130 @@ footer {
 
 .footer-icons .fa {
     font-size: 24px;
+}
+
+.modal {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 200ms;
+    visibility: hidden;
+    opacity: 0;
+}
+  
+.modal .navbar-menu-close {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    right: 10px;
+}
+
+.modal .navbar-menu-close {
+    font-size: 25px;
+    color: #fff;
+}
+  
+.modal .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: #f7f7f7;   
+    transition: transform ease 0.3s;
+    transform: translate3d(-100%, 0, 0);
+}
+
+.modal.modal-toggle {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.modal.modal-toggle .navbar {
+    transform: translate3d(0, 0, 0);
+}
+  
+
+@media screen and (max-width: 768px) {
+    .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .wrapper {
+        margin: 0;
+        border: none;
+    }
+
+    header .navbar-collapse  {
+        display: none;
+    }
+
+    .navbar .navbar-menu {
+        display: block;
+    }
+
+    .profile, 
+    .contacts,
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .profile,
+    .left {
+        text-align: left;
+    }
+
+    .left {
+        border: none;
+    }
+
+    .modal .navbar-nav {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    header, main, footer {
+        padding: 30px 20px;
+    }
+
+    .profile, 
+    .contacts, 
+    .left > div, 
+    .right > div {
+        padding: 20px 0;
+    }
+
+    .avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .card img {
+        width: 280px;
+    }
+
+    .footer-icons {
+        justify-content: space-around;
+    }
 }
